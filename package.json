@@ -4,7 +4,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts",
-    "build": "bun-vercel ./src/index.ts"
+    "start": "bun run ./dist/index.js",
+    "build": "bun build --compile --minify --target bun --outfile ./dist/index.js ./src/index.ts"
   },
   "dependencies": {
     "@elysiajs/cors": "^1.2.0",

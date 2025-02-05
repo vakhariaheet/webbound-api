@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "apis": [
+    {
+      "identifier": "gupshup",
+      "source": "@gupshup/v1.0#16snolilxwvi9fz",
+      "integrity": "sha512-tRq6HtozQpc4hGCfQBAHFQHoMGly4RQnMvL10N2DJMZCZhmBRyEwfYpXGd9lcgybWNsBKjc2LTDa1CMItaQBTw==",
+      "installerVersion": "6.1.2"
+    }
+  ]
+}

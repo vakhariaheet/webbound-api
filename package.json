@@ -5,12 +5,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts",
     "start": "bun run ./dist/index.js",
-    "build": "bun build --compile --minify --target bun --outfile ./dist/index.js ./src/index.ts"
+    "build": "bun build --compile --minify --target bun --outfile ./dist/index.js ./src/index.ts",
+    "db:start": "docker-compose up db -d",
+    "db:stop": "docker-compose stop db",
+    "db:logs": "docker-compose logs db -f"
   },
   "dependencies": {
+    "@api/gupshup": "file:./.api/apis/gupshup",
     "@elysiajs/cors": "^1.2.0",
     "@elysiajs/swagger": "^1.2.0",
-    "elysia": "latest"
+    "elysia": "latest",
+    "postgres": "^3.4.5"
   },
   "devDependencies": {
     "bun-types": "latest"
